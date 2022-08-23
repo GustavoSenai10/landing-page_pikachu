@@ -9,7 +9,7 @@
 
     --primary-color: #F5CF06;
     --secudary-color:#8E4106;
-    --white-color: #FFFFF;
+    --white-color: #FFFF;
     --space-default: 70px;
 }
 
@@ -37,7 +37,7 @@ header{
 }
 .logo{
 
-    display: flex;
+    display:inline-flex;
     gap: 16px;
     align-items: center;
     font-size: 32px;
@@ -47,12 +47,67 @@ header{
 }
 main{
 
-    background-color: blue;
+    
     flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+}
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: end center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title__text{
 
+    font-size: 20vw;
+    color: white;
+}
+.title__transparent{
+
+   position: absolute;
+    font-size: 27vw;
+    z-index: -1;
+    transform: translateY(-35%);
+    color:#FFFFFF55;
+
+
+}
+
+.description{
+
+    grid-column: 1/7;
+    place-self: center start;
+    color: var(--secudary-color);
+}
+.description__title{
+
+    font-size: 4rem;
+
+
+
+}
+.action{
+
+    grid-column: 7/-1;
+    place-self: center end;
+    width: 411px;
+    height: 100px;
+    background-color: var(--secudary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 3rem;
+    text-decoration: none;
 }
 footer{
 
-
-    background-color: chartreuse;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--secudary-color);
+   
 }
