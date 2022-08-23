@@ -21,19 +21,29 @@ body{
     background-color: var(--primary-color) ;
     display: flex;
     flex-direction: column;
-    padding-top: var(--space-default)
+    padding-top: var(--space-default);
     padding-right: var(--space-default);
     padding-bottom: 24px;
     padding-left: var(--space-default);
+    font-family: 'Righteous', cursive;
 
 }
 header{
 
-    background-color: black;
-   
+    height: 48px;
 
 
 
+}
+.logo{
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    color: var(--secudary-color);
+    
 }
 main{
 
