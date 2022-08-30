@@ -132,7 +132,7 @@ footer{
     }
     main{
 
-        grid-template-columns: repeat 1fr; 
+        grid-template-columns: 1fr; 
 
     }
     .pikachu{
@@ -156,6 +156,7 @@ footer{
         grid-column: 1;
         grid-row: 2;
         place-self:  center;
+        text-align: center;
 
     }
     .action{
@@ -170,7 +171,7 @@ footer{
         display: none;
     }
 }
-@media (max-width:640px){
+@media (max-width: 640px){
 
     .pikachu{
 
@@ -179,12 +180,12 @@ footer{
     }
     .description__title{
 
-        font-size: 2.2vw;
+        font-size: 15vw;
 
     }
 
-    .description{
-
+    .description__text{
+        display: none;
        
 
     }
