@@ -169,11 +169,29 @@ footer{
 
         display: none;
     }
+}
+@media (max-width:640px){
 
+    .pikachu{
 
+        width: 90vw;
+        
+    }
+    .description__title{
 
+        font-size: 2.2vw;
 
+    }
 
+    .description{
 
+       
+
+    }
+    .action{
+
+        width: 100%;
+
+    }
 
 }
